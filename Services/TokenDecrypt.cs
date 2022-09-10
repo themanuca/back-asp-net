@@ -1,28 +1,50 @@
 using System.IdentityModel.Tokens.Jwt;
-
-namespace APITESTE.Services{
-    public static class TokenDecrypt{
-        public static string VerifyTokenTime(string token){
-
-            var stream = token;  
+using System.Security.Claims;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using APITESTE.Models;
+namespace APITESTE.Services
+{
+    public static class TokenDecrypt
+    {
+        public static string VerifyTokenTime(string token)
+        {
+            var key = Encoding.ASCII.GetBytes(Setting.privateKey);
             var handler = new JwtSecurityTokenHandler();
-            var jsonToken = handler.ReadToken(stream);
-            var tokenS = jsonToken as JwtSecurityToken;
-            var jti = tokenS.Claims.First(claim => claim.Type == "exp").Value;
-            long l1 = (long)Convert.ToDouble(jti);
-            DateTimeOffset dateTimeOffSet = DateTimeOffset.FromUnixTimeSeconds(l1);
-            DateTime dateTime = dateTimeOffSet.DateTime;
-            DateTime dateTokenUTC = dateTime.AddHours(-3);
-            DateTime dateNow = DateTime.Now.AddSeconds(6);
-            
-            var dateToken = dateTokenUTC.ToString("HH:mm:ss");
-            var dateNowToken = dateNow.ToString("HH:mm:ss");
+            var validations = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+            var claims = handler.ValidateToken(token, validations, out var tokenSecure);
+            return claims.Identity.Name;
 
-            if(dateNowToken == dateToken){
-                Console.WriteLine("Foi");
-            }
-           
-            return dateToken  +"s"+  dateNowToken;
+            //     var tokenValidationParameters = new TokenValidationParameters
+            //     {
+
+            //         ValidateIssuerSigningKey = true,
+            //         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Setting.privateKey)),
+            //         ValidateIssuer = false,
+            //         ValidateAudience = false,
+            //     };
+
+            //     var tokenHandler = new JwtSecurityTokenHandler();
+            //     var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out var securityToken);
+            //     if (securityToken is not JwtSecurityToken jwtSecurityToken ||
+            //         !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256Signature, StringComparison.InvariantCultureIgnoreCase))
+            //     {
+
+            //         return "Invalid Token";
+            //     }
+
+
+
+
+
+            //     return "Token Valido";
+            // }
         }
     }
 }

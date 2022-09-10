@@ -33,3 +33,38 @@ C:\Users\Sergio Manuca\Desktop\Projetos\apiAspNet\ApiTeste\bin\Debug\net6.0\Micr
 C:\Users\Sergio Manuca\Desktop\Projetos\apiAspNet\ApiTeste\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Sergio Manuca\Desktop\Projetos\apiAspNet\ApiTeste\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Sergio Manuca\Desktop\Projetos\apiAspNet\ApiTeste\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.csproj.AssemblyReference.cache
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.AssemblyInfoInputs.cache
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.AssemblyInfo.cs
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.csproj.CoreCompileInputs.cache
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\refint\ApiTeste.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.pdb
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\appsettings.json
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\ApiTeste.exe
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\ApiTeste.deps.json
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\ApiTeste.runtimeconfig.json
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\ApiTeste.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\ApiTeste.pdb
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\scopedcss\bundle\ApiTeste.styles.css
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.csproj.CopyComplete
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ApiTeste.genruntimeconfig.cache
+C:\Users\Interprocess\Desktop\Projeto\back-asp-net\obj\Debug\net6.0\ref\ApiTeste.dll

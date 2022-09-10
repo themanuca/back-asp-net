@@ -12,18 +12,22 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var key = Encoding.ASCII.GetBytes(Setting.Secret);
-builder.Services.AddAuthentication(X=>{
+builder.Services.AddAuthentication(X =>
+{
     X.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     X.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(x=>{
+}).AddJwtBearer(x =>
+{
 
     x.RequireHttpsMetadata = false;
-    x.SaveToken= true;
-    x.TokenValidationParameters = new TokenValidationParameters {
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateIssuer = false,
-        ValidateAudience = false
+        ValidateAudience = false,
+
     };
 });
 
