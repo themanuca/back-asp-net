@@ -19,7 +19,7 @@ namespace APITESTE.Services
                 {
                     Subject = new ClaimsIdentity(new[]{
                         new Claim(ClaimTypes.Name, user.Username),
-                        new Claim(ClaimTypes.Email, user.Email)
+                        new Claim(ClaimTypes.Email, user.Email),
                     }),
                     Expires = DateTime.UtcNow.AddHours(8),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -40,7 +40,8 @@ namespace APITESTE.Services
                 {
                     Subject = new ClaimsIdentity(new[]{
                         new Claim(ClaimTypes.Name, user.Username),
-                        new Claim(ClaimTypes.Email, user.Email)
+                        new Claim(ClaimTypes.Email, user.Email),
+                        new Claim(ClaimTypes.Role , user.Roles)
                     }),
                     Expires = DateTime.UtcNow.AddMilliseconds(30000),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

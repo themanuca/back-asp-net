@@ -19,7 +19,9 @@ namespace APITESTE.Services
                 ValidateAudience = false
             };
             var claims = handler.ValidateToken(token, validations, out var tokenSecure);
-            return claims.Identity.Name;
+            
+            
+            return claims.ToString();
 
            
         }

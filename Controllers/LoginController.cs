@@ -10,7 +10,7 @@ namespace APITESTE.Controllers{
         [HttpPost]
         [Route("login")]
         public async Task<ActionResult<dynamic>> AuthenticateAsync([FromBody] User model){
-            var user = UserRepository.Get(model.Username, model.Email);
+            var user = UserRepository.Get(model.Username, model.Email, model?.Roles);
 
             if(user == null){
                 return  NotFound(new{message="Usuario não encontrado"});
