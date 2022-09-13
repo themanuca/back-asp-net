@@ -21,30 +21,7 @@ namespace APITESTE.Services
             var claims = handler.ValidateToken(token, validations, out var tokenSecure);
             return claims.Identity.Name;
 
-            //     var tokenValidationParameters = new TokenValidationParameters
-            //     {
-
-            //         ValidateIssuerSigningKey = true,
-            //         IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Setting.privateKey)),
-            //         ValidateIssuer = false,
-            //         ValidateAudience = false,
-            //     };
-
-            //     var tokenHandler = new JwtSecurityTokenHandler();
-            //     var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out var securityToken);
-            //     if (securityToken is not JwtSecurityToken jwtSecurityToken ||
-            //         !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256Signature, StringComparison.InvariantCultureIgnoreCase))
-            //     {
-
-            //         return "Invalid Token";
-            //     }
-
-
-
-
-
-            //     return "Token Valido";
-            // }
+           
         }
     }
 }
